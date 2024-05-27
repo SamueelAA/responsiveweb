@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    width: 65%;
+    font-family: verdana;
+    margin-top: 9px;
+    margin-left: 8px;
+    color: black;
+}
+.container{
+    display: flex;
+}
+.menu{
+    width: 20%;
+}
+.menu a{
+    display: block;
+    padding: 8px;
+    margin-top: 7px;
+
+}
+.main{
+    width: 60%;
+    padding: 0 20px;
+}
+.about{
+    width: 20%;
+    background-color: rgb(178, 205, 206);
+    text-align: center;
+    padding: 15px;
+}
+.copyrigth{
+    background-color: #e5e5e5;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+/*para dar estilos especificos para pantallas tipo tablet*/
+@media screen and (max-width:800px){
+    h1{
+        color: #15f;
+    }
+}
+
+@media screen and (max-width:600px){
+    .container{
+        flex-direction: column;
+    }
+    .container div{
+        width: 100;
+    }
+}
